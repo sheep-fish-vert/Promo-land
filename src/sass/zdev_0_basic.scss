@@ -96,6 +96,8 @@ input, textarea{
 }
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
-
+@include font-face('Museo', 'MuseoSansCyrl-300', 300);
+@include font-face('Museo', 'MuseoSansCyrl-500', 500);
+@include font-face('Museo', 'MuseoSansCyrl-700', 700);
 
 /*/fonts*/

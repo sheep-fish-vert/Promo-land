@@ -1,0 +1,157 @@
+/* animation*/
+	@keyframes  bliking{
+		0% {opacity: 1;
+		}
+		100%{opacity: 0.2;			
+		}
+	}
+/*/animation*/
+
+body{font-family: 'Museo';}
+.main{position:relative;}
+/* artboard-main */	
+	.artboard-main{background: #ffd91c; position: absolute; width: 100%; top: 0; left:0;
+		
+	}
+/* /artboard-main */
+
+/* artboard1 */	
+	.artboard1{z-index: 10;
+		.main-wrapper{display: flex; justify-content: center; height: 100%; align-items:center;
+			.left-side{padding-right: 80px;
+				.statement{
+					
+				}
+			}
+			.right-side{ max-width: 570px; padding-left: 80px; position: relative;
+				.scroll-pane{padding-top: 45px;height: 345px;overflow: auto;
+						.jspTrack{background: #ffd91c;
+							.jspDrag{max-height: 75px; background: rgba(242, 206, 28, 0.8); border-radius: 45px; }
+						}
+
+						
+					}
+				.dialog-container{ padding-top: 45px;
+					.row{
+						&.active{
+							.post{opacity: 1;}
+						}
+						&:nth-child(1){
+							.post{max-width: 175px;}
+						}
+						&:nth-child(2){
+							.post{max-width: 480px;}
+						}
+						&:nth-child(3){
+							.post{max-width: 215px;}
+						}
+						.post{  background: #fff; display: flex; padding: 10px 0px 0 20px ; border-radius: 15px;position: relative;margin-bottom: 50px; opacity: 0; transition: 1s;
+							&:after{content: ''; display: block; position: absolute;  border-bottom: 20px solid #fff; border-right: 20px solid transparent; left: 0; bottom: -9px; transform: rotate(90deg)}
+							.text-wrapper{font-family: "Museo"; font-size: 24px;
+								p{margin: 10px 0;}
+							}
+							
+						}
+					}
+				}
+				.printing-process{font-size: 18px; transition: 1s;
+					&.hide-inner-text{	opacity:0;
+					}
+					p{animation-name: bliking; animation-duration: 1s;animation-iteration-count: infinite; animation-direction: alternate;}
+				}
+				.submit-button-wrapper{width: 100%; display: flex; justify-content: flex-end;
+					.submit-button{background: #ffcc00; border: 1px solid #000; border-radius: 15px; padding: 20px 45px; display: inline-block;  cursor: pointer; opacity: 0; transition: 1s;
+						&.show{opacity: 1;}
+						span{font-size: 24px;}
+					}
+				}
+				.description-text{ position: relative; bottom: -100px;
+					p{font-size: 18px;}
+				}
+				.dots{display: flex; flex-direction: column;  position: absolute; right: -150px; top: 50%;margin-top: -80px;
+					.dot{width: 15px; height: 15px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px;
+						&:nth-child(1){
+							&:after{content: ''; display: block; position: absolute; background: #fff; width: 9px; height: 9px; top: 50%; left: 50%; margin-left: -4.5px; margin-top: -4.5px; border-radius: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+/* /artboard1 */	
+
+/* artboard1 */
+	.artboard2{z-index: 11;
+		.main-wrapper{display: flex; flex-wrap:wrap; max-width: 1024px; margin: 0 auto; padding-top:155px; 
+			.header-wrapper{ width: 100%; padding-bottom: 70px;
+				.heading{ color: #005b7e; width: 490px; margin: 0 auto; text-align: center; 
+					h3{ margin: 0 0 35px 0; font-weight: 300;font-size: 60px;}
+					
+				}
+				.under-heading{ color: #005b7e; width: 315px; margin: 0 auto; text-align: center;
+					h5{margin: 0;font-size: 18px; line-height: 1.5; font-weight: 300;}
+				}
+			}
+			.choise-blog{width: 100%; display: flex;
+				.left-choise{ width: 320px;
+					&:hover{cursor: pointer;
+						.white-layout{
+							.heart-button-wrapper{
+								.heart-button{background: #ffd91c; border: none;
+									
+								}
+							}
+						}
+					}
+					.white-layout{background: #fff; border-radius: 15px;padding: 15px; display: flex; flex-wrap: wrap; width: 100%;
+						.image-wrapper{border-radius: 15px;
+							
+						}
+						.heart-button-wrapper{ width: 100%; display: flex; justify-content: center;padding: 20px 0 30px 0;
+							.heart-button{  width: 56px; min-height: 56px; border: 1px solid #baecff; border-radius: 50%; display: flex; justify-content: center; align-items: center;  
+								
+							}
+						}
+					}
+					.under-text{color: #005b7e; font-size: 24px; text-align: center;
+						p{}
+					}
+				}
+				.right-choise{width: 320px;
+					&:hover{cursor: pointer;
+						.white-layout{
+							.heart-button-wrapper{
+								.heart-button{background: #ffd91c; border: none;
+									
+								}
+							}
+						}
+					}
+					.white-layout{background: #fff; border-radius: 15px;padding: 15px; display: flex; flex-wrap: wrap; width: 100%;
+						.image-wrapper{border-radius: 15px;
+							
+						}
+						.heart-button-wrapper{ width: 100%; display: flex; justify-content: center;padding: 20px 0 30px 0;
+							.heart-button{  width: 56px; min-height: 56px; border: 1px solid #baecff; border-radius: 50%; display: flex; justify-content: center; align-items: center;  
+								
+							}
+						}
+					}
+					.under-text{color: #005b7e; font-size: 24px; text-align: center;
+						p{}
+					}
+				}
+				.or-button-wrapper{flex: 1; display:flex; justify-content: center; align-items: center;
+					.or-button{width: 110px; height: 110px; border: 2px dashed #156576; border-radius: 50%;margin-top: -50px; position: relative;
+						&:after{content: ''; display: block; position: absolute; width: 84px; height: 84px; background: #ffe565; border-radius: 50%; top: 50%; left: 50%; margin-left: -42px; margin-top: -42px;  }
+						p{margin: 0; font-size: 30px; color: #005b7e; position: relative; z-index: 1; line-height: 110px; text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+/* /artboard1 */
+
+
