@@ -8,6 +8,25 @@ function sectionHeight(){
 	$('.artboard-main').css('height', artboardHeight);
 }
 
+ function hoveredHeart(){
+ 	$('.choises').hover(function(){
+ 		 $(this).find('.heart-button img').attr('src','images/red-heart.png');
+ 	},function(){
+ 		 $(this).find('.heart-button img').attr('src','images/blue-heart.png');
+ 	});
+ }
+
+ function fadingBlocks(){
+ 	$(document).on("click", ".choises", function(){
+ 		$(this).parents('.artboard-main').fadeOut();
+ 	})
+
+ 	$(document).on("click", ".submit-button", function(){
+ 		$(this).parents('.artboard-main').fadeOut();
+ 	})
+ }
+
+
 function showPosts(){
 	var countPosts = $(".post");
 	var i = 0;
@@ -39,6 +58,10 @@ $(document).ready(function(){
 	});
 
 	showPosts();
+
+	hoveredHeart();
+
+	fadingBlocks();
 });
 
 $(window).load(function(){

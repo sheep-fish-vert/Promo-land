@@ -81,9 +81,10 @@ body{font-family: 'Museo';}
 	}
 /* /artboard1 */	
 
-/* artboard1 */
-	.artboard2{z-index: 11;
-		.main-wrapper{display: flex; flex-wrap:wrap; max-width: 1024px; margin: 0 auto; padding-top:155px; 
+/* artboard2 */
+	.artboard2{z-index: 9;}
+	.artboard2, .artboard-main{
+		.main-wrapper{display: flex; flex-wrap:wrap; max-width: 1024px; margin: 0 auto; padding-top:155px; position: relative;
 			.header-wrapper{ width: 100%; padding-bottom: 70px;
 				.heading{ color: #005b7e; width: 490px; margin: 0 auto; text-align: center; 
 					h3{ margin: 0 0 35px 0; font-weight: 300;font-size: 60px;}
@@ -149,9 +150,33 @@ body{font-family: 'Museo';}
 						}
 					}
 				}
+				.dots{display: flex; flex-direction: column;  position: absolute; right: -150px; top: 50%;margin-top: 80px;
+					.dot{width: 15px; height: 15px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px;
+						&:nth-child(1){
+							&:after{content: ''; display: block; position: absolute; background: #fff; width: 9px; height: 9px; top: 50%; left: 50%; margin-left: -4.5px; margin-top: -4.5px; border-radius: 50%;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
-/* /artboard1 */
+/* /artboard2 */
 
+/* /artboard3 */
+		.artboard3{ z-index: 8;
+			
+		}
+/* /artboard3 */
 
+/* /artboard4 */
+		.artboard4{ z-index: 7;
+			
+		}
+/* /artboard4 */
+
+/* /artboard5 */
+		.artboard5{ z-index: 6;
+			
+		}
+/* /artboard5 */
