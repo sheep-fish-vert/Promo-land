@@ -24,6 +24,10 @@ function sectionHeight(){
  	$(document).on("click", ".submit-button", function(){
  		$(this).parents('.artboard-main').fadeOut();
  	})
+
+ 	$(document).on("click", ".next-page", function(){
+ 		$(this).parents('.artboard-main').fadeOut();
+ 	})
  }
 
 
