@@ -34,6 +34,9 @@ body{font-family: 'Museo'; font-weight: 300;}
 
 /* artboard1 */	
 	.artboard1{z-index: 10;
+		.telephone-number{max-width: 1024px; width: 100%; margin: 0 auto; display: flex; justify-content: flex-end; margin-bottom: -50px; height:50px; align-items: flex-end;
+			a{ font-size: 16px; color: #000; text-decoration: none;}
+		}
 		.main-wrapper{
 			.left-side{padding-right: 80px;
 				.statement{
