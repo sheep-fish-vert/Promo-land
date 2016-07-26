@@ -11,20 +11,30 @@ body{font-family: 'Museo';}
 .main{position:relative;}
 /* artboard-main */	
 	.artboard-main{background: #ffd91c; position: absolute; width: 100%; top: 0; left:0;
-		.dots{display: flex; flex-direction: column;  position: absolute; right: -150px; top: 50%;margin-top: -80px;
-					.dot{width: 15px; height: 15px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px;
-						&:nth-child(1){
-							&:after{content: ''; display: block; position: absolute; background: #fff; width: 9px; height: 9px; top: 50%; left: 50%; margin-left: -4.5px; margin-top: -4.5px; border-radius: 50%;
-							}
-						}
+		.main-wrapper{ display: flex; justify-content: center; height: 100%; align-items:center;}
+		.dots{display: flex; flex-direction: column; width: 50px; align-items: flex-end;
+			.dot{width: 15px; height: 15px;  background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px;
+				&:nth-child(1){
+					&:after{content: ''; display: block; position: absolute; background: #fff; width: 9px; height: 9px; top: 50%; left: 50%; margin-left: -4.5px; margin-top: -4.5px; border-radius: 50%;
 					}
 				}
+			}
+		}
+		.header-wrapper{ width: 100%; 
+				.heading{ color: #005b7e; width: 490px; margin: 0 auto; text-align: center; 
+					h3{ margin: 0 0 35px 0; font-weight: 300;font-size: 60px;}
+					
+				}
+				.under-heading{ color: #005b7e; width: 315px; margin: 0 auto; text-align: center;
+					h5{margin: 0;font-size: 18px; line-height: 1.5; font-weight: 300;}
+				}
+			}
 	}
 /* /artboard-main */
 
 /* artboard1 */	
 	.artboard1{z-index: 10;
-		.main-wrapper{display: flex; justify-content: center; height: 100%; align-items:center;
+		.main-wrapper{
 			.left-side{padding-right: 80px;
 				.statement{
 					
@@ -75,7 +85,8 @@ body{font-family: 'Museo';}
 				.description-text{ position: relative; bottom: -100px;
 					p{font-size: 18px;}
 				}
-				.dots{display: flex; flex-direction: column;  position: absolute; right: -150px; top: 50%;margin-top: -80px;
+			}
+			.dots{display: flex; flex-direction: column; 
 					.dot{width: 15px; height: 15px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px;
 						&:nth-child(1){
 							&:after{content: ''; display: block; position: absolute; background: #fff; width: 9px; height: 9px; top: 50%; left: 50%; margin-left: -4.5px; margin-top: -4.5px; border-radius: 50%;
@@ -83,25 +94,24 @@ body{font-family: 'Museo';}
 						}
 					}
 				}
-			}
 		}
 	}
 /* /artboard1 */	
 
 /* artboard2 */
 	.artboard2{z-index: 9;}
-	.artboard2, .artboard-main{
-		.main-wrapper{display: flex; flex-wrap:wrap; max-width: 1024px; margin: 0 auto; padding-top:155px; position: relative;
-			.header-wrapper{ width: 100%; padding-bottom: 70px;
+	.artboard2, .artboard-choice{
+		.main-wrapper{display: flex; flex-wrap:wrap; max-width: 1024px; margin: 0 auto; justify-content: center; height: 100%; align-content:center;
+			.header-wrapper{ width: 100%; 
 				.heading{ color: #005b7e; width: 490px; margin: 0 auto; text-align: center; 
 					h3{ margin: 0 0 35px 0; font-weight: 300;font-size: 60px;}
 					
 				}
-				.under-heading{ color: #005b7e; width: 315px; margin: 0 auto; text-align: center;
+				.under-heading{ color: #005b7e; width: 315px; margin: 0 auto; text-align: center; padding-bottom: 50px;
 					h5{margin: 0;font-size: 18px; line-height: 1.5; font-weight: 300;}
 				}
 			}
-			.choise-blog{width: 100%; display: flex;
+			.choise-blog{width: 100%; display: flex; 
 				.left-choise{ width: 320px;
 					&:hover{cursor: pointer;
 						.white-layout{
@@ -184,8 +194,8 @@ body{font-family: 'Museo';}
 
 /* artboard6 */
 	.artboard6{z-index: 5;
-		.main-wrapper{ padding-top: 230px;
-			.header-wrapper{
+		.main-wrapper{  flex-wrap: nowrap; 
+			.header-wrapper{width: auto;
 				.smile-images{ display: flex; justify-content: center;
 					.row{						
 						.post{  background: #fff; display: flex; padding: 5px 5px 5px 20px ; border-radius: 15px;position: relative;margin-bottom: 50px; transition: 1s;max-width: 175px;
@@ -201,7 +211,7 @@ body{font-family: 'Museo';}
 						span{font-size: 24px;}
 					}
 				}
-				.dots{margin-top: 80px;
+				.dots{margin-top: 80px; justify-content: center;
 				}
 			}
 		}
@@ -210,42 +220,48 @@ body{font-family: 'Museo';}
 
 /* artboard7 */
 	.artboard7{z-index: 4;
-		.main-wrapper{padding-top: 60px;
+		.main-wrapper{flex-wrap: wrap; padding-top: 30px;
 			.header-wrapper{padding-bottom: 35px;
 				.heading{width:600px;}
 				.under-heading{
 					
 				}
 			}
-			.result-block{display: flex; flex-wrap: wrap; justify-content: center; position: relative;
-				.result{background: #fff; max-width: 705px; width: 100%; padding: 0 0 0 10px; display: flex; position: relative;margin-bottom: 30px; border-radius: 15px;
-					.number{ color: #005b7e; font-size: 60px; line-height: 125px; width: 125px; text-align: center;margin-right: 10px;
-						img{position: absolute; top: 0; left: 10px; }
-					}
-					.image-wrapper{padding-top: 7px; margin-right: 50px; 
-						
-					}
-					.description-part{font-size: 24px; color: #005b7e; line-height: 75px; 
-					}					
-				}
-				.share-part{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;
-						.share-heading{
-							h3{font-weight: 300;font-size: 36px; color: #005b7e; margin-top: 0;}
+			.result-block{display: flex;justify-content: center; position: relative;
+				.main-part-wrapper{display: flex; flex-wrap: wrap; justify-content: center; position: relative; max-width: 710px; width: 100%;
+					.result{background: #fff; max-width: 705px; width: 100%; padding: 0 0 0 10px; display: flex; position: relative;margin-bottom: 30px; border-radius: 15px;
+						align-items: center;
+						.number{ color: #005b7e; font-size: 60px; line-height: 125px; width: 125px; text-align: center;margin-right: 10px;
+							img{position: absolute; top: 0; left: 10px; }
 						}
-						.share-links{width: 100%; display: flex; justify-content: center;
-							.pluso{min-height: 40px;
-								.pluso-wrap{
-									div{min-height: 40px; margin-right: 15px;}
-										a{min-height: 40px;}
-									
+						.image-wrapper{padding-top: 7px; margin-right: 50px; 
+							
+						}
+						.description-part{font-size: 24px; color: #005b7e; 
+						}					
+					}
+					.share-part{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;
+							.share-heading{
+								h3{font-weight: 300;font-size: 36px; color: #005b7e; margin-top: 0;}
+							}
+							.share-links{width: 100%; display: flex; justify-content: center;
+								.pluso{min-height: 40px;
+									.pluso-wrap{
+										div{min-height: 40px; margin-right: 15px;}
+											a{min-height: 40px;
+												&.pluso-more{display: none;						
+												}
+											}
+										
+									}
 								}
 							}
 						}
+					.next-page{font-size: 24px;  text-align: center; color: #005b7e; cursor: pointer; width: 100%;
+						p{text-decoration: underline;}
 					}
-				.next-page{font-size: 24px;  text-align: center; color: #005b7e; cursor: pointer; width: 100%;
-					p{text-decoration: underline;}
 				}
-				.dots{right:0;}
+				.dots{right:0; padding-top: 150px;}
 				
 			}
 		}
@@ -254,7 +270,7 @@ body{font-family: 'Museo';}
 
 /* artboard8 */
 	.artboard8{color: #005b7e; z-index: 3;
-		.main-wrapper{padding-top: 60px;
+		.main-wrapper{
 			.header-wrapper{padding-bottom: 0;
 				.heading{width: 600px;}
 			}
@@ -281,11 +297,16 @@ body{font-family: 'Museo';}
 						&:-ms-input-placeholder      {color:#005b7e; }
 					}
 					button{border: 1px solid #005b7e; background: #fad51b;padding: 10px 30px; border-radius: 15px;}
+					.error{ border: 1px solid red;}
+				}
+				.under-form-text{
+					a{ color: #005b7e;}
 				}
 				.one-more-smile{text-align: center;
 					
 				}
-			}		
+			}	
+			.dots{padding-bottom:150px;}	
 		}
 	}
 /* /artboard8 */
@@ -296,7 +317,12 @@ body{font-family: 'Museo';}
 		margin: 0 auto;padding-top: 20px;
 			.share-part{ font-size: 16px;  display: flex;
 				.pluso{display: inline-block;
-					a{min-height: 20px;}
+					a{min-height: 20px;
+						&.pluso-more{display: none;
+						
+						}
+					}
+					
 				}
 				p{margin: 5px 10px 0 0 ;}
 			}

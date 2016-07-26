@@ -11,13 +11,103 @@
 
 }
 @media screen and (max-width: 1024px){
-
+	.artboard1{
+		.main-wrapper{flex-wrap: wrap;
+			.left-side{ width: 100%; display: flex; justify-content: center; padding-right: 0;
+				
+			}
+			.right-side{
+				.description-text{bottom: 0px;
+					
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
+	.artboard-main{
+		.main-wrapper{
+			.right-side{padding: 0px 40px;
+				.dialog-container .row .post .text-wrapper{font-size: 18px;					
+					}	
+				.common-wrapper{
+					.description-text{
+						p{font-size: 14px; }
+					}
+				}		 
+			}
+			.dots{display: none;
+				
+			}
+			.heading{width: 100%;
+				h3{font-size: 30px;}
+			}
 
+			.result-block{
+				.main-part-wrapper{ 
+					.result{ 
+						.description-part{font-size: 14px;
+
+						}
+					}
+					.share-part{
+						.share-heading{text-align: center; padding: 0 10px;
+							h3{font-size: 24px; }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.artboard7, .artboard8, .artboard6{
+	 	.main-wrapper .header-wrapper .heading{width: 100%;
+			h3{font-size: 30px;}
+		}	
+	}
+	.artboard8 .main-wrapper .statistick-block .under-list-text{font-size: 16px; width: 100%; padding: 0 10px;		
+	}
+	.artboard8 .main-wrapper .statistick-block form{ flex-direction: column; align-items: center;
+		*{margin-bottom: 10px;}
+	}
+
+	.under-form-text{width: 100%; padding: 0 10px; text-align: center;		
+	}
+	.artboard8 .main-wrapper .statistick-block .main-container{ padding-bottom: 0px;}
+	.artboard-choice{
+		.main-wrapper{
+			.header-wrapper{
+				.heading{max-width: 490px; width: 100%; 
+				}
+			}
+			.choise-blog{flex-direction: column; align-items: center;
+				.choises{padding-bottom: 30px;
+					.white-layout{flex-wrap: nowrap;
+						
+					}
+				}
+				.or-button-wrapper{padding: 10px 0; 
+				}
+			}
+		}
+	}
+	.artboard7 .main-wrapper .result-block .main-part-wrapper .share-part{
+		.share-heading{}
+		.share-links .pluso .pluso-wrap div{margin-right: 5px;}
+	.footer{padding: 0 10px;
+		.main-wrapper{ padding: 0;
+			.share-part{flex-wrap: wrap; font-size: 12px;
+				
+			}
+			.central-part{font-size: 12px;
+				
+			}
+			.right-part{ flex-wrap: wrap; font-size: 12px;}
+		}
+	}
 }
 @media screen and (max-width: 666px){
 
