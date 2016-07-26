@@ -7,7 +7,7 @@
 	}
 /*/animation*/
 
-body{font-family: 'Museo';}
+body{font-family: 'Museo'; font-weight: 300;}
 .main{position:relative;}
 /* artboard-main */	
 	.artboard-main{background: #ffd91c; position: absolute; width: 100%; top: 0; left:0;
@@ -83,11 +83,11 @@ body{font-family: 'Museo';}
 					}
 				}
 				.description-text{ position: relative; bottom: -100px;
-					p{font-size: 18px;}
+					p{font-size: 18px; line-height: 1.2;}
 				}
 			}
-			.dots{display: flex; flex-direction: column; 
-					.dot{width: 15px; height: 15px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px;
+			.dots{display: flex; flex-direction: column; width: 150px; padding-top: 50px;
+					.dot{width: 15px; height: 15px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; margin-bottom: 10px; 
 						&:nth-child(1){
 							&:after{content: ''; display: block; position: absolute; background: #fff; width: 9px; height: 9px; top: 50%; left: 50%; margin-left: -4.5px; margin-top: -4.5px; border-radius: 50%;
 							}
@@ -126,8 +126,8 @@ body{font-family: 'Museo';}
 						.image-wrapper{border-radius: 15px;
 							
 						}
-						.heart-button-wrapper{ width: 100%; display: flex; justify-content: center;padding: 20px 0 30px 0;
-							.heart-button{  width: 56px; min-height: 56px; border: 1px solid #baecff; border-radius: 50%; display: flex; justify-content: center; align-items: center;  
+						.heart-button-wrapper{ width: 100%; display: flex; justify-content: center;padding: 20px 0 30px 0;align-content: center; align-items: center;
+							.heart-button{  width: 56px; min-height: 56px; max-height: 56px; border: 1px solid #baecff; border-radius: 50%; display: flex; justify-content: center; align-items: center;  
 								
 							}
 						}
@@ -146,12 +146,12 @@ body{font-family: 'Museo';}
 							}
 						}
 					}
-					.white-layout{background: #fff; border-radius: 15px;padding: 15px; display: flex; flex-wrap: wrap; width: 100%;
+					.white-layout{background: #fff; border-radius: 15px;padding: 15px; display: flex; flex-wrap: wrap; width: 100%; 
 						.image-wrapper{border-radius: 15px;
 							
 						}
-						.heart-button-wrapper{ width: 100%; display: flex; justify-content: center;padding: 20px 0 30px 0;
-							.heart-button{  width: 56px; min-height: 56px; border: 1px solid #baecff; border-radius: 50%; display: flex; justify-content: center; align-items: center;  
+						.heart-button-wrapper{ width: 100%; display: flex; justify-content: center;padding: 20px 0 30px 0; align-content: center; align-items: center;
+							.heart-button{  width: 56px; min-height: 56px; max-height: 56px; border: 1px solid #baecff; border-radius: 50%; display: flex; justify-content: center; align-items: center;  
 								
 							}
 						}
@@ -163,7 +163,7 @@ body{font-family: 'Museo';}
 				.or-button-wrapper{flex: 1; display:flex; justify-content: center; align-items: center;
 					.or-button{width: 110px; height: 110px; border: 2px dashed #156576; border-radius: 50%;margin-top: -50px; position: relative;
 						&:after{content: ''; display: block; position: absolute; width: 84px; height: 84px; background: #ffe565; border-radius: 50%; top: 50%; left: 50%; margin-left: -42px; margin-top: -42px;  }
-						p{margin: 0; font-size: 30px; color: #005b7e; position: relative; z-index: 1; line-height: 110px; text-align: center;
+						p{margin: 0; font-size: 30px; color: #005b7e; position: relative; z-index: 1; line-height: 105px; text-align: center;font-weight: 700; text-transform: lowercase; 
 						}
 					}
 				}
@@ -195,7 +195,7 @@ body{font-family: 'Museo';}
 /* artboard6 */
 	.artboard6{z-index: 5;
 		.main-wrapper{  flex-wrap: nowrap; 
-			.header-wrapper{width: auto;
+			.header-wrapper{width: 974px;
 				.smile-images{ display: flex; justify-content: center;
 					.row{						
 						.post{  background: #fff; display: flex; padding: 5px 5px 5px 20px ; border-radius: 15px;position: relative;margin-bottom: 50px; transition: 1s;max-width: 175px;
@@ -206,14 +206,14 @@ body{font-family: 'Museo';}
 				}
 				.heading{width: 600px;}
 				.submit-button-wrapper{width: 100%; display: flex; justify-content: center; padding-top:  100px;
-					.submit-button{background: #ffcc00; border: 1px solid #000; border-radius: 15px; padding: 20px 45px; display: inline-block;  cursor: pointer;  transition: 1s;
+					.submit-button{background: #ffcc00; border: 1px solid #005b7e; border-radius: 15px; padding: 20px 45px; display: inline-block;  cursor: pointer;  transition: 1s; color: #005b7e;
 						&.show{opacity: 1;}
 						span{font-size: 24px;}
 					}
-				}
-				.dots{margin-top: 80px; justify-content: center;
-				}
+				}				
 			}
+			.dots{margin-top: 80px; justify-content: center;padding-bottom:30px;
+				}
 		}
 	}
 /* /artboard6 */
@@ -221,14 +221,16 @@ body{font-family: 'Museo';}
 /* artboard7 */
 	.artboard7{z-index: 4;
 		.main-wrapper{flex-wrap: wrap; padding-top: 30px;
-			.header-wrapper{padding-bottom: 35px;
-				.heading{width:600px;}
+			.header-wrapper{margin-bottom: -35px;
+				.heading{width:600px;
+					h3{margin: 0 0 20px 0;}	
+				}
 				.under-heading{
 					
 				}
 			}
-			.result-block{display: flex;justify-content: center; position: relative;
-				.main-part-wrapper{display: flex; flex-wrap: wrap; justify-content: center; position: relative; max-width: 710px; width: 100%;
+			.result-block{display: flex;justify-content: center; position: relative; 
+				.main-part-wrapper{display: flex; flex-wrap: wrap; justify-content: center; position: relative; max-width: 974px; width: 100%;
 					.result{background: #fff; max-width: 705px; width: 100%; padding: 0 0 0 10px; display: flex; position: relative;margin-bottom: 30px; border-radius: 15px;
 						align-items: center;
 						.number{ color: #005b7e; font-size: 60px; line-height: 125px; width: 125px; text-align: center;margin-right: 10px;
@@ -261,7 +263,7 @@ body{font-family: 'Museo';}
 						p{text-decoration: underline;}
 					}
 				}
-				.dots{right:0; padding-top: 150px;}
+				.dots{right:0; padding-top: 220px;}
 				
 			}
 		}
@@ -272,7 +274,7 @@ body{font-family: 'Museo';}
 	.artboard8{color: #005b7e; z-index: 3;
 		.main-wrapper{
 			.header-wrapper{padding-bottom: 0;
-				.heading{width: 600px;}
+				.heading{max-width: 960px; width: 100%;}
 			}
 			.statistick-block{ margin: 0 auto;
 				.statistick-heading{text-align: center;
@@ -281,12 +283,12 @@ body{font-family: 'Museo';}
 					}
 				}
 				.main-container{ max-width: 340px; padding: 30px 0 30px 80px; background: #fad51b;margin: 0 auto 30px;
-					ol{font-size: 30px; font-family: 'Museo'; font-weight: 300; color: #005b7e;
-						li{	
+					ol{font-size: 30px; font-family: 'Museo'; font-weight: 300; color: #005b7e;margin: 0;
+						li{	margin-bottom: 5px;
 						}
 					}
 				}
-				.under-list-text{font-size: 24px; width: 680px; margin: 0 auto; text-align: center;margin: 30px 0;
+				.under-list-text{font-size: 24px; width: 680px; margin: 0 auto; text-align: center;margin: 30px 0;line-height: 1.5;
 					
 				}
 				form{display: flex; justify-content: space-between;
@@ -296,7 +298,7 @@ body{font-family: 'Museo';}
 						&:-moz-placeholder           {color:#005b7e; }/* Firefox 18- */
 						&:-ms-input-placeholder      {color:#005b7e; }
 					}
-					button{border: 1px solid #005b7e; background: #fad51b;padding: 10px 30px; border-radius: 15px;}
+					button{border: 1px solid #005b7e; background: #fad51b;padding: 10px 30px; border-radius: 15px; font-size: 24px;}
 					.error{ border: 1px solid red;}
 				}
 				.under-form-text{
@@ -306,7 +308,7 @@ body{font-family: 'Museo';}
 					
 				}
 			}	
-			.dots{padding-bottom:150px;}	
+			.dots{padding-bottom:40px;}	
 		}
 	}
 /* /artboard8 */
